@@ -1,0 +1,36 @@
+HOLA INGE, PORFAVOR LEA ESTO ANTES DE PROBAR MI PROGRAMA, LE SUBI EL PROGRAMA QUE SI ERA, PERO QUE A LA VEZ NO, 
+PORQUE EL QUE ESTABA TRABAJANDO ERA OTRO, PERO FUNCIONA IGUAL, LO UNICO ES QUE EN EL QUE ESTA SUBIDO NO ESTAN PROBADOS LOS FUNCIONES
+SOLO COPIE ESTE PEDACITO DE CODIGO, PERDONE Y MUCHAS GRACIAS
+NO ES QUE LE FALTE CODIGO O SEA PARTE DE LA FUNCIONALIDAD DEL CODGIO, SOLO ES PARA QUE FUNCIONEN LAS COSAS Y NO LAS TENGA QUE INGRESAR USTED
+SINO LO QUIERE COPIAR ESTA BIEN, SOLO PRUEBELO PORFAVOR E INGRESE LOS DATOS USTED, PORFAVOR
+GRACIAS Y PERDONE MUCHO, NO SE ENOJE Y NO ME PENALICE POR ESTO :,) PORFAVOR x2
+
+
+//COPIAR DESDE LA SIGUIENTE LINEA 
+
+const avlTree = new AVLTree();
+
+const products = [
+  new Product("P001", "Producto No.1", 10),
+  new Product("P002", "Producto No.2", 20),
+  new Product("P003", "Producto No.3", 30),
+  new Product("P004", "Producto No.4", 40),
+  new Product("P005", "Producto No.5", 50)
+];
+
+products.forEach(product => avlTree.insert(product));
+console.log("\nProductos Insertados en el AVL:");
+
+const minPriceProduct = avlTree.findMinPrice();
+console.log("\nProducto con el Precio Minimo:", minPriceProduct);
+
+const maxPriceProduct = avlTree.findMaxPrice();
+console.log("\nProducto con el Precio Máximo:", maxPriceProduct);
+
+console.log("\nEliminando Producto con el Codigo P002");
+avlTree.remove("P002");
+console.log("Estado del Arbol tras la Eliminación de P002:", avlTree.findProductsInRange(0, 100));
+
+  
+console.log("\nGracias por Utilizar mi Programa");
+console.log("Programa Hecho Por: Angie Melissa Santiago Rodriguez - 1555123");
