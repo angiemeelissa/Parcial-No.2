@@ -58,7 +58,7 @@ class Product {
       } else if (product.price > node.product.price) {
         node.right = this._insert(node.right, product);
       } else {
-        throw new Error("Product with this price already exists.");
+        throw new Error("Producto con ese precio YA EXISTE");
       }
   
       this.updateHeight(node);
@@ -96,7 +96,7 @@ class Product {
         productNode.product.price = newPrice;
         this.insert(productNode.product);
       } else {
-        throw new Error("Product not found");
+        throw new Error("Producto NO ENCONTRADO");
       }
     }
   
